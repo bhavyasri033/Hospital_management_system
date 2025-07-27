@@ -1,0 +1,29 @@
+.layout {
+  min-height: 100vh;
+  background-color: #f5f6fa;
+}
+
+.main-content {
+  padding: 80px 20px 20px 80px;
+  transition: padding-left 0.3s ease;
+}
+
+.main-content.sidebar-open {
+  padding-left: 260px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .main-content {
+    padding: 80px 15px 15px 75px;
+  }
+
+  .main-content.sidebar-open {
+    padding-left: 75px;
+  }
+
+  .sidebar.open {
+    width: 100%;
+    background-color: rgba(44, 62, 80, 0.97);
+  }
+} 
